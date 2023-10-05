@@ -1,0 +1,274 @@
+<novela>
+  <capitulo numero="1" titulo="El comienzo">
+    <parrafo>
+      <personaje nombre="Protagonista">Era una fría noche de invierno cuando el protagonista se adentró en el oscuro bosque. La luna brillaba débilmente entre las ramas retorcidas de los árboles.</personaje>
+    </parrafo>
+    <parrafo>
+      <personaje nombre="Voz en la oscuridad">"¿Quién va ahí?", se escuchó una voz misteriosa que parecía venir desde lo más profundo del bosque.</personaje>
+    </parrafo>
+    <parrafo>
+      <opcion id="1" texto="Responder a la voz">
+        <accion>
+          <parrafo>
+            <personaje nombre="Protagonista">"Soy un viajero perdido", respondió el protagonista con cautela.</personaje>
+          </parrafo>
+          <parrafo>
+            <personaje nombre="Voz en la oscuridad">"Bienvenido, viajero perdido. Te advierto que este bosque es peligroso. Sigue el camino de la derecha si deseas encontrar la salida", dijo la voz con un tono enigmático.</personaje>
+          </parrafo>
+          <goto capitulo="2" />
+        </accion>
+      </opcion>
+      <opcion id="2" texto="Ignorar la voz y seguir caminando">
+        <accion>
+          <parrafo>
+            <personaje nombre="Protagonista">El protagonista decidió ignorar la voz y continuar su camino a través del oscuro bosque.</personaje>
+          </parrafo>
+          <goto capitulo="3" />
+        </accion>
+      </opcion>
+    </parrafo>
+  </capitulo>
+  
+  <capitulo numero="2" titulo="El camino de la derecha">
+    <parrafo>
+      <personaje nombre="Protagonista">El protagonista decidió seguir el camino de la derecha, tal como indicó la misteriosa voz.</personaje>
+    </parrafo>
+    <parrafo>
+      <personaje nombre="Narrador">A medida que avanzaba, el bosque se volvía más espeso y los sonidos de la naturaleza se desvanecían.</personaje>
+    </parrafo>
+    <parrafo>
+      <personaje nombre="Voz en la oscuridad">"Estás cerca de tu destino, viajero. Pero ten cuidado, el peligro acecha en las sombras", advirtió la voz mientras el protagonista continuaba su marcha.</personaje>
+    </parrafo>
+    <parrafo>
+      <opcion id="3" texto="Investigar el ruido extraño">
+        <accion>
+          <parrafo>
+            <personaje nombre="Protagonista">Intrigado por un ruido extraño, el protagonista decidió desviarse del camino para investigar su origen.</personaje>
+          </parrafo>
+          <goto capitulo="4" />
+        </accion>
+      </opcion>
+      <opcion id="4" texto="Continuar por el camino">
+        <accion>
+          <parrafo>
+            <personaje nombre="Protagonista">El protagonista decidió no desviarse y siguió por el camino en busca de su destino.</personaje>
+          </parrafo>
+          <goto capitulo="5" />
+        </accion>
+      </opcion>
+    </parrafo>
+  </capitulo>
+
+  <!-- Capítulo 3 -->
+  <capitulo numero="3" titulo="El encuentro en la oscuridad">
+    <parrafo>
+      <personaje nombre="Protagonista">El protagonista siguió caminando por el bosque, cauteloso de cada sombra que se movía a su alrededor.</personaje>
+    </parrafo>
+    <parrafo>
+      <personaje nombre="Narrador">De repente, se escuchó un ruido estruendoso detrás de él. Al volverse, el protagonista se encontró con una figura sombría y misteriosa.</personaje>
+    </parrafo>
+    <parrafo>
+      <personaje nombre="Misterioso personaje">"Has llegado lejos, viajero. Pero el verdadero desafío aún está por venir", dijo el misterioso personaje con una voz profunda.</personaje>
+    </parrafo>
+    <parrafo>
+      <opcion id="5" texto="Desafiar al misterioso personaje">
+        <accion>
+          <parrafo>
+            <personaje nombre="Protagonista">Decidido a no dejarse intimidar, el protagonista desafió al misterioso personaje y le exigió respuestas.</personaje>
+          </parrafo>
+          <goto capitulo="6" />
+        </accion>
+      </opcion>
+      <opcion id="6" texto="Escuchar al misterioso personaje">
+        <accion>
+          <parrafo>
+            <personaje nombre="Protagonista">El protagonista decidió escuchar al misterioso personaje y esperar a que revelara más información.</personaje>
+          </parrafo>
+          <goto capitulo="7" />
+        </accion>
+      </opcion>
+    </parrafo>
+  </capitulo>
+
+  <!-- Capítulo 4 -->
+  <capitulo numero="4" titulo="El origen del ruido">
+    <parrafo>
+      <personaje nombre="Protagonista">El protagonista se adentró en la espesura del bosque, siguiendo el ruido que tanto lo intrigaba.</personaje>
+    </parrafo>
+    <parrafo>
+      <personaje nombre="Narrador">Tras unos momentos de búsqueda, el protagonista descubrió que el ruido provenía de una cascada oculta entre los árboles.</personaje>
+    </parrafo>
+    <parrafo>
+      <personaje nombre="Voz en la cascada">"Has llegado hasta aquí, valiente viajero. Pero aún tienes mucho por descubrir en este bosque encantado", susurró una voz misteriosa que salía de la cascada.</personaje>
+    </parrafo>
+    <parrafo>
+      <opcion id="7" texto="Explorar la cascada">
+        <accion>
+          <parrafo>
+            <personaje nombre="Protagonista">El protagonista decidió explorar la cascada y averiguar qué secretos ocultaba.</personaje>
+          </parrafo>
+          <goto capitulo="8" />
+        </accion>
+      </opcion>
+      <opcion id="8" texto="Regresar al camino principal">
+        <accion>
+          <parrafo>
+            <personaje nombre="Protagonista">El protagonista decidió dejar la cascada atrás y continuar su camino principal por el bosque.</personaje>
+          </parrafo>
+          <goto capitulo="9" />
+        </accion>
+      </opcion>
+    </parrafo>
+  </capitulo>
+
+  <!-- Capítulo 5 -->
+  <capitulo numero="5" titulo="El destino revelado">
+    <parrafo>
+      <personaje nombre="Protagonista">Después de un largo y agotador viaje, el protagonista llegó a un claro en el bosque donde se encontraba un antiguo templo en ruinas.</personaje>
+    </parrafo>
+    <parrafo>
+      <personaje nombre="Narrador">Un aura de misterio envolvía el lugar, y el protagonista sabía que finalmente había llegado a su destino.</personaje>
+    </parrafo>
+    <parrafo>
+      <personaje nombre="Voz en la oscuridad">"Has superado todas las pruebas, valiente viajero. Ahora, el destino del mundo está en tus manos", resonó la voz misteriosa desde las sombras.</personaje>
+    </parrafo>
+    <parrafo>
+      <opcion id="9" texto="Entrar al templo">
+        <accion>
+          <parrafo>
+            <personaje nombre="Protagonista">Con determinación, el protagonista decidió adentrarse en el antiguo templo y descubrir qué le esperaba allí dentro.</personaje>
+          </parrafo>
+          <goto capitulo="10" />
+        </accion>
+      </opcion>
+      <opcion id="10" texto="Detenerse y reflexionar">
+        <accion>
+          <parrafo>
+            <personaje nombre="Protagonista">El protagonista decidió tomar un momento para reflexionar sobre todo lo que había sucedido antes de adentrarse en el templo.</personaje>
+          </parrafo>
+          <goto capitulo="11" />
+        </accion>
+      </opcion>
+    </parrafo>
+  </capitulo>
+
+  <!-- Capítulo 6 -->
+<capitulo numero="6" titulo="El desafío final">
+  <parrafo>
+    <personaje nombre="Protagonista">El protagonista enfrentó al misterioso personaje con valentía y determinación, dispuesto a descubrir la verdad.</personaje>
+  </parrafo>
+  <parrafo>
+    <personaje nombre="Misterioso personaje">"Eres más valiente de lo que imaginaba", dijo el misterioso personaje. "Pero para obtener respuestas, deberás enfrentar el desafío final".</personaje>
+  </parrafo>
+  <parrafo>
+    <personaje nombre="Narrador">El protagonista se preparó mentalmente para el desafío que se avecinaba, sin saber qué pruebas y obstáculos le aguardaban.</personaje>
+  </parrafo>
+  <!-- Aquí continuarían las opciones y acciones para el desafío final -->
+</capitulo>
+
+<!-- Capítulo 7 -->
+<capitulo numero="7" titulo="Revelaciones en la oscuridad">
+  <parrafo>
+    <personaje nombre="Protagonista">El protagonista decidió escuchar atentamente las palabras del misterioso personaje, esperando que revelara más información sobre el bosque y su propósito.</personaje>
+  </parrafo>
+  <parrafo>
+    <personaje nombre="Misterioso personaje">"Este bosque esconde secretos ancestrales y poderes que solo los dignos pueden desbloquear", susurró el misterioso personaje en tono enigmático.</personaje>
+  </parrafo>
+  <parrafo>
+    <personaje nombre="Narrador">El protagonista se sintió intrigado y deseoso de descubrir más sobre su papel en la historia que se estaba desarrollando.</personaje>
+  </parrafo>
+  <!-- Aquí continuarían las opciones y acciones para obtener más revelaciones -->
+</capitulo>
+
+<!-- Capítulo 8 -->
+<capitulo numero="8" titulo="El secreto de la cascada">
+  <parrafo>
+    <personaje nombre="Protagonista">Con valentía, el protagonista exploró la cascada, deseoso de descubrir qué misterios ocultaba y qué significado tenía en su aventura.</personaje>
+  </parrafo>
+  <parrafo>
+    <personaje nombre="Voz en la cascada">La voz misteriosa en la cascada reveló secretos antiguos y revelaciones sorprendentes que dejaron al protagonista sin aliento.</personaje>
+  </parrafo>
+  <!-- Aquí continuarían las opciones y acciones para explorar más la cascada -->
+</capitulo>
+
+<!-- Capítulo 9 -->
+<capitulo numero="9" titulo="El camino hacia la verdad">
+  <parrafo>
+    <personaje nombre="Protagonista">El protagonista siguió caminando por el bosque, decidido a descubrir la verdad que se escondía en su interior.</personaje>
+  </parrafo>
+  <parrafo>
+    <personaje nombre="Narrador">Cada paso que daba, cada desafío que superaba, lo acercaba cada vez más a la revelación final.</personaje>
+  </parrafo>
+  <!-- Aquí continuarían los eventos y desafíos que el protagonista enfrentaría en su búsqueda de la verdad -->
+</capitulo>
+
+<!-- Capítulo 10 -->
+<capitulo numero="10" titulo="El templo de los destinos">
+  <parrafo>
+    <personaje nombre="Protagonista">Con paso firme, el protagonista ingresó al antiguo templo, donde las respuestas finales lo esperaban.</personaje>
+  </parrafo>
+  <parrafo>
+    <personaje nombre="Narrador">Los secretos ancestrales y los destinos entrelazados se revelaron ante sus ojos, revelando un propósito mayor y un poder que podría cambiarlo todo.</personaje>
+  </parrafo>
+  <!-- Aquí continuarían las opciones y acciones para explorar el templo -->
+</capitulo>
+
+<!-- Capítulo 11 -->
+<capitulo numero="11" titulo="La reflexión del protagonista">
+  <parrafo>
+    <personaje nombre="Protagonista">El protagonista se detuvo un momento para reflexionar sobre todo lo que había experimentado y enfrentado hasta ahora.</personaje>
+  </parrafo>
+  <parrafo>
+    <personaje nombre="Narrador">Las decisiones tomadas y los desafíos superados habían moldeado al protagonista, preparándolo para el clímax final de la historia.</personaje>
+  </parrafo>
+  <!-- Aquí continuarían las opciones y acciones para que el protagonista reflexione -->
+</capitulo>
+
+<!-- Capítulo 12 -->
+<capitulo numero="12" titulo="El enfrentamiento definitivo">
+  <parrafo>
+    <personaje nombre="Protagonista">Con el corazón lleno de valentía y determinación, el protagonista se preparó para el enfrentamiento definitivo que decidiría el destino del mundo y su propio destino.</personaje>
+  </parrafo>
+  <parrafo>
+    <personaje nombre="Narrador">Las fuerzas del bien y del mal convergieron en una batalla épica mientras el protagonista luchaba por proteger lo que amaba y desentrañar la verdad final.</personaje>
+  </parrafo>
+  <!-- Aquí continuarían las opciones y acciones para el enfrentamiento final -->
+</capitulo>
+
+<!-- Capítulo 13 -->
+<capitulo numero="13" titulo="La revelación de la verdad">
+  <parrafo>
+    <personaje nombre="Protagonista">Después de una dura batalla, el protagonista finalmente triunfó sobre las fuerzas malignas y se acercó al corazón del misterio que había envuelto toda su aventura.</personaje>
+  </parrafo>
+  <parrafo>
+    <personaje nombre="Narrador">Allí, en el epicentro de la verdad, se desvelaron los secretos ocultos durante siglos y se revelaron los verdaderos motivos de los personajes clave.</personaje>
+  </parrafo>
+  <!-- Aquí continuarían las opciones y acciones para la revelación de la verdad -->
+</capitulo>
+
+<!-- Capítulo 14 -->
+<capitulo numero="14" titulo="El epílogo">
+  <parrafo>
+    <personaje nombre="Protagonista">Después de la revelación de la verdad, el protagonista tuvo que tomar decisiones difíciles que determinarían el curso final de su historia.</personaje>
+  </parrafo>
+  <parrafo>
+    <personaje nombre="Narrador">Las consecuencias de sus acciones se desplegaron ante sus ojos mientras amistades se forjaban, enemigos se redimían y el mundo se transformaba en base a sus elecciones.</personaje>
+  </parrafo>
+  <!-- Aquí continuarían las opciones y acciones para el epílogo -->
+</capitulo>
+
+<!-- Capítulo 15 (Final) -->
+<capitulo numero="15" titulo="El destino cumplido">
+  <parrafo>
+    <personaje nombre="Protagonista">En el capítulo final de la historia, el protagonista llegó al final de su viaje y encontró su destino cumplido.</personaje>
+  </parrafo>
+  <parrafo>
+    <personaje nombre="Narrador">El mundo estaba cambiado para siempre, pero el protagonista había dejado su marca y había aprendido valiosas lecciones a lo largo del camino.</personaje>
+  </parrafo>
+  <parrafo>
+    <personaje nombre="Narrador">Con su misión cumplida y su corazón lleno de gratitud, el protagonista se despidió de los personajes que lo acompañaron en su aventura y cerró este capítulo de su vida con esperanza para el futuro.</personaje>
+  </parrafo>
+  <!-- Aquí se cerraría la historia -->
+</capitulo>
+
+</novela>
