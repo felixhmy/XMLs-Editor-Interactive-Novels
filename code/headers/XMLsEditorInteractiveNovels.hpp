@@ -1,5 +1,3 @@
-// Autor: Félix Hernández Muñoz-Yusta
-
 #pragma once
 
 #include <QtWidgets/QMainWindow>
