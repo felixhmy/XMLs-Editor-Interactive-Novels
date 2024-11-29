@@ -1,3 +1,5 @@
+// Autor: felixhmy
+
 #pragma once
 
 #include <QtWidgets/QMainWindow>
