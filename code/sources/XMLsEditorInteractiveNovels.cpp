@@ -1,4 +1,4 @@
-// Autor: Félix Hernández Muñoz-Yusta
+// Autor: FÃ©lix HernÃ¡ndez
 
 #include "../headers/XMLsEditorInteractiveNovels.hpp"
 
@@ -31,7 +31,7 @@ void XMLsEditorInteractiveNovels::New()
         xmlEditorInstance.OpenFile(filePath);
         QMessageBox::information(this, "New File", "File template loaded. Please use the Save option to save the file once completed.");
 
-        // Se carga en el árbol
+        // Se carga en el Ã¡rbol
         model->clear(); // limpia el model antes de llenarlo
         tinyxml2::XMLElement* root = xmlEditorInstance.GetRootNode();
         QStandardItem* rootItem = new QStandardItem(QString::fromStdString(root->Name()));
@@ -55,7 +55,7 @@ void XMLsEditorInteractiveNovels::Load()
     try {
         xmlEditorInstance.OpenFile(filePath);
 
-        // Se carga en el árbol
+        // Se carga en el Ã¡rbol
         model->clear(); // limpia el model antes de llenarlo
         tinyxml2::XMLElement* root = xmlEditorInstance.GetRootNode();
         QStandardItem* rootItem = new QStandardItem(QString::fromStdString(root->Name()));
@@ -78,7 +78,7 @@ void XMLsEditorInteractiveNovels::Save()
 
     std::string filePath = qFilePath.toStdString();
 
-    // Actualizar la estructura XML en memoria según los cambios en la vista de árbol
+    // Actualizar la estructura XML en memoria segÃºn los cambios en la vista de Ã¡rbol
     QModelIndex rootIndex = model->index(0, 0);
     UpdateXmlNode(xmlEditorInstance.GetRootNode(), model->itemFromIndex(rootIndex));
 
@@ -90,23 +90,23 @@ void XMLsEditorInteractiveNovels::Save()
 
 void XMLsEditorInteractiveNovels::AddNode()
 {
-    // Primero, obten el elemento seleccionado en el árbol
+    // Primero, obten el elemento seleccionado en el Ã¡rbol
     QModelIndex currentIndex = ui.treeView->currentIndex();
     QStandardItem* currentItem = model->itemFromIndex(currentIndex);
 
     if (currentItem == nullptr)
     {
-        // No se seleccionó ningún elemento
+        // No se seleccionÃ³ ningÃºn elemento
         QMessageBox::information(this, tr("Error"), tr("No node selected."));
         return;
     }
 
-    // Aquí se usa findNode para encontrar el nodo XML correspondiente
+    // AquÃ­ se usa findNode para encontrar el nodo XML correspondiente
     tinyxml2::XMLElement* currentXMLNode = findNode(currentItem->text().toStdString(), xmlEditorInstance.GetRootNode());
 
     if (currentXMLNode == nullptr)
     {
-        // No se encontró el nodo correspondiente en el XML
+        // No se encontrÃ³ el nodo correspondiente en el XML
         QMessageBox::information(this, tr("Error"), tr("No corresponding XML node found."));
         return;
     }
@@ -132,7 +132,7 @@ void XMLsEditorInteractiveNovels::AddNode()
             model->appendRow(rootItem);
             buildTree(root, rootItem);
 
-            // Encontramos el nuevo elemento en el árbol y lo seleccionamos
+            // Encontramos el nuevo elemento en el Ã¡rbol y lo seleccionamos
             QStandardItem* newItem = findItem(newNode, rootItem);
             if (newItem)
             {
@@ -144,23 +144,23 @@ void XMLsEditorInteractiveNovels::AddNode()
 
 void XMLsEditorInteractiveNovels::QuitNode()
 {
-    // Primero, obten el elemento seleccionado en el árbol
+    // Primero, obten el elemento seleccionado en el Ã¡rbol
     QModelIndex currentIndex = ui.treeView->currentIndex();
     QStandardItem* currentItem = model->itemFromIndex(currentIndex);
 
     if (currentItem == nullptr)
     {
-        // No se seleccionó ningún elemento
+        // No se seleccionÃ³ ningÃºn elemento
         QMessageBox::information(this, tr("Error"), tr("No node selected."));
         return;
     }
 
-    // Aquí se usa findNode para encontrar el nodo XML correspondiente
+    // AquÃ­ se usa findNode para encontrar el nodo XML correspondiente
     tinyxml2::XMLElement* currentXMLNode = findNode(currentItem->text().toStdString(), xmlEditorInstance.GetRootNode());
 
     if (currentXMLNode == nullptr)
     {
-        // No se encontró el nodo correspondiente en el XML
+        // No se encontrÃ³ el nodo correspondiente en el XML
         QMessageBox::information(this, tr("Error"), tr("No corresponding XML node found."));
         return;
     }
@@ -178,7 +178,7 @@ void XMLsEditorInteractiveNovels::QuitNode()
         model->appendRow(rootItem);
         buildTree(root, rootItem);
 
-        // Seleccionamos el elemento correspondiente al padre en el árbol
+        // Seleccionamos el elemento correspondiente al padre en el Ã¡rbol
         QStandardItem* newCurrentItem = findItem(parentNode, rootItem);
         if (newCurrentItem)
         {
@@ -225,7 +225,7 @@ void XMLsEditorInteractiveNovels::buildTree(tinyxml2::XMLElement* rootNode, QSta
 
 void XMLsEditorInteractiveNovels::UpdateXmlNode(tinyxml2::XMLElement* xmlElement, QStandardItem* item)
 {
-    // Actualizar el contenido del nodo XML según el elemento de la vista de árbol
+    // Actualizar el contenido del nodo XML segÃºn el elemento de la vista de Ã¡rbol
     QString itemName = item->text();
 
     // Actualizar los atributos del nodo y buscar posibles subnodos para actualizar
