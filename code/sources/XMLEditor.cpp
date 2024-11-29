@@ -1,3 +1,5 @@
+// Autor: felixhmy
+
 #include <stdexcept>
 #include <fstream>
 
