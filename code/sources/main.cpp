@@ -1,4 +1,4 @@
-// Autor: Félix Hernández
+// Autor: felixhmy
 
 // Editor de XMLs de novelas interactivas
 #include "../headers/XMLsEditorInteractiveNovels.hpp"
