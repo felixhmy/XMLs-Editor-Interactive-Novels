@@ -1,4 +1,4 @@
-// Autor: Félix Hernández Muñoz-Yusta
+// Autor: FÃ©lix HernÃ¡ndez
 
 // Editor de XMLs de novelas interactivas
 #include "../headers/XMLsEditorInteractiveNovels.hpp"
