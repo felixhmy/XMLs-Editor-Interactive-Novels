@@ -1,5 +1,3 @@
-// Autor: Félix Hernández Muñoz-Yusta
-
 #include <stdexcept>
 #include <fstream>
 
@@ -99,11 +97,11 @@ namespace xmlEditor
         // Limpiar el documento actual
         xmlDoc.Clear();
 
-        // Crear la declaración XML
+        // Crear la declaraciÃ³n XML
         tinyxml2::XMLDeclaration* decl = xmlDoc.NewDeclaration();
         xmlDoc.InsertFirstChild(decl);
 
-        // Crear el nodo raíz
+        // Crear el nodo raÃ­z
         tinyxml2::XMLElement* root = xmlDoc.NewElement(rootName.c_str());
         xmlDoc.InsertEndChild(root);
     }
@@ -121,7 +119,7 @@ namespace xmlEditor
             return startNode;
         }
 
-        // A continuación, busca en todos los nodos hijos del nodo actual
+        // A continuaciÃ³n, busca en todos los nodos hijos del nodo actual
         for (tinyxml2::XMLElement* childNode = startNode->FirstChildElement(); childNode != nullptr; childNode = childNode->NextSiblingElement())
         {
             tinyxml2::XMLElement* result = GetNodeByNameRecursive(childNode, nodeName);
@@ -131,7 +129,7 @@ namespace xmlEditor
             }
         }
 
-        // Si no se encontró el nodo, devuelve nullptr
+        // Si no se encontrÃ³ el nodo, devuelve nullptr
         return nullptr;
     }
 
