@@ -1,5 +1,3 @@
-// Autor: Félix Hernández Muñoz-Yusta
-
 #pragma once
 
 #include <string>
@@ -19,16 +17,16 @@ namespace xmlEditor
         // Abre el archivo XML y carga su contenido
         void OpenFile(const std::string& filePath);
 
-        // Crear un nuevo archivo XML con el nombre de nodo raíz proporcionado
+        // Crear un nuevo archivo XML con el nombre de nodo raÃ­z proporcionado
         void CreateNew(const std::string& rootName);
 
-        // Obtener el nodo raíz
+        // Obtener el nodo raÃ­z
         tinyxml2::XMLElement* GetRootNode();
 
         // Obtener un nodo hijo por su nombre
         tinyxml2::XMLElement* GetChildNode(tinyxml2::XMLElement* parentNode, const std::string& nodeName);
 
-        // Añadir un nuevo nodo hijo
+        // AÃ±adir un nuevo nodo hijo
         tinyxml2::XMLElement* AddChildNode(tinyxml2::XMLElement* parentNode, const std::string& nodeName);
 
         // Eliminar un nodo hijo
@@ -37,7 +35,7 @@ namespace xmlEditor
         // Modificar el valor de un nodo
         void ModifyNodeValue(tinyxml2::XMLElement* node, const std::string& newValue);
 
-        // Añadir o modificar un atributo a un nodo
+        // AÃ±adir o modificar un atributo a un nodo
         void ModifyNodeAttribute(tinyxml2::XMLElement* node, const std::string& attributeName, const std::string& attributeValue);
 
         // Guardar el archivo XML con los cambios
