@@ -1,4 +1,5 @@
-// Autor: felixhmy
+// Autor: felixhmy 
+// Todos los derechos reservados © 2025 
 
 #include <stdexcept>
 #include <fstream>
