@@ -1,4 +1,5 @@
 # XMLs-Editor-Interactive-Novels
+**Editor de archivos .xml pensado para los diálogos de las novelas interactivas de los juegos.**
 
 Esta herramienta lee archivos .xml y los despliega en una ventana en vista de arbol.
 En esta ventana se pueden leer de forma organizada, editar y guardar los cambios en los textos editables del archivo.
